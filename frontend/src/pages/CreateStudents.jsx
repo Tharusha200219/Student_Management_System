@@ -31,7 +31,7 @@ const CreateStudents = () => {
             .catch((error) => {
                 alert('An error occurred');
                 console.log(error);
-                setLoading(false); // Make sure to set loading to false in case of error
+                setLoading(false); 
             });
     };
 

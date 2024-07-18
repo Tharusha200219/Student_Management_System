@@ -6,6 +6,7 @@ import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
 import NavigationBar from '../components/NavigationBar';
+import { Button } from '@mui/material';
 
 const StudentManagementHome = () => {
     const [studentManagements, setStudentManagements] = useState([]);
@@ -41,12 +42,18 @@ const StudentManagementHome = () => {
             (typeof student[searchColumn] === 'string' && student[searchColumn].toLowerCase().includes(searchTerm.toLowerCase()))
         );
     });
+
     return (
         <div>
             <NavigationBar />
             <div style={styles.container}>
                 <div style={styles.header}>
                     <h1 style={styles.title}>Student Management List</h1>
+                    <Button variant="contained" color="primary">
+                        <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>
+                            ADD NEW STUDENT 
+                        </Link>
+                    </Button>
                 </div>
                 <div style={styles.search}>
                     <input
@@ -121,6 +128,7 @@ const StudentManagementHome = () => {
         </div>
     );
 }
+
 const styles = {
     container: {
         padding: '20px',
@@ -181,7 +189,7 @@ const styles = {
     },
     tableHeaderCell: {
         padding: '10px',
-        textAlign: 'left',
+        textAlign: 'center',
         fontSize: '14px',
         fontWeight: 'bold',
         color: '#333',
@@ -197,11 +205,12 @@ const styles = {
     tableCell: {
         padding: '10px',
         fontSize: '14px',
+        textAlign: 'center',
     },
     actions: {
         display: 'flex',
         justifyContent: 'center',
-        gap: '8px',
+        gap: '20px',
     },
     actionIcon: {
         fontSize: '20px',
