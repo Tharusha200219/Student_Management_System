@@ -50,7 +50,7 @@ const StudentManagementHome = () => {
                 <div style={styles.header}>
                     <h1 style={styles.title}>Student Management List</h1>
                     <Button variant="contained" color="primary">
-                        <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>
+                        <Link to="/CreateStudents" style={{ textDecoration: 'none', color: 'white' }}>
                             ADD NEW STUDENT 
                         </Link>
                     </Button>

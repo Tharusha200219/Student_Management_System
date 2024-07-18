@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 
-
-
-
 import CreateStudents from './pages/CreateStudents.jsx';
 
 import DeleteStudents from './pages/DeleteStudents.jsx';
@@ -10,6 +7,7 @@ import DeleteStudents from './pages/DeleteStudents.jsx';
 import EditStudents from './pages/EditStudents.jsx';
 
 import ShowStudents from './pages/ShowStudents.jsx';
+
 import Studentshome from "./pages/Studentshome.jsx";
 
 import Home from "./pages/Home.jsx";
