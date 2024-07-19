@@ -1,8 +1,11 @@
 import express from "express";
 import StudentManagements from '../models/Student_Management_model.js';  
 const router = express.Router();
+//router for student management 
+//Create new student record
 
-// Create new student record
+//add student to the system
+
 router.post('/', async (request, response) => {
     try {
         if (
@@ -31,7 +34,7 @@ router.post('/', async (request, response) => {
     }
 });
 
-// Get all student records
+//Get all student records
 router.get('/', async (request, response) => {
     try {
         const studentManagements = await StudentManagements.find({});
@@ -45,7 +48,7 @@ router.get('/', async (request, response) => {
     }
 });
 
-// Get student record by ID
+//Get student record by ID
 router.get('/:id', async (request, response) => {
     try {
         const { id } = request.params;
@@ -57,7 +60,7 @@ router.get('/:id', async (request, response) => {
     }
 });
 
-// Update student record by ID
+//Update student record by ID
 router.put('/:id', async (request, response) => {
     try {
         if (
@@ -85,7 +88,7 @@ router.put('/:id', async (request, response) => {
     }
 });
 
-// Delete student record by ID
+//Delete student record by ID
 router.delete('/:id', async (request, response) => {
     try {
         const { id } = request.params;
