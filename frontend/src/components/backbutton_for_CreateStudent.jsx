@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 import React from 'react';
 
-// Capitalized component name
+//backbutton component 
 const backbutton_for_CreateStudent = ({ destination = '/Studentshome' }) => {
     return (
         <div className='flex'>

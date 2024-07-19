@@ -8,7 +8,7 @@ import { MdOutlineDelete } from 'react-icons/md';
 import NavigationBar from '../components/NavigationBar';
 import { Button } from '@mui/material';
 
-const StudentManagementHome = () => {
+const StudentHome = () => {
     const [studentManagements, setStudentManagements] = useState([]);
     const [loading, setLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
@@ -227,4 +227,4 @@ const styles = {
     },
 };
 
-export default StudentManagementHome;
+export default StudentHome;

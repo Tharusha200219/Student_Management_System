@@ -6,21 +6,21 @@ import StudentManagementRoute from "./routes/Student_Management_route.js";
 
 const app = express();
 
-// Middleware to parse JSON bodies
+//Middleware to parse JSON bodies
 app.use(express.json());
 
-// Enable CORS
+//Enable CORS
 app.use(cors());  // Use the cors middleware
 
-// Default route
+//Default route
 app.get('/', (request, response) => {
     return response.status(200).send('Welcome to MERN tutorial');
 });
 
-// Routes
-app.use('/StudentManagements', StudentManagementRoute);  // Match the route prefix
+//Routes
+app.use('/StudentManagements', StudentManagementRoute);  
 
-// Connect to MongoDB and start server
+//Connect to MongoDB and start the server
 mongoose.connect(mongoDBURL).then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {

@@ -12,11 +12,11 @@ const NavigationBar = () => {
     return (
         <StyledAppBar position="static">
             <Toolbar style={{ justifyContent: 'space-between' }}>
-                {/* Flex container for logo and company name */}
+                
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    {/* Company logo */}
+                    {/* school logo (i used my school logo as in this project) */}
                     <img src="/images/logo.png" alt="Company Logo" style={{ height: '40px', marginRight: '10px' }} />
-                    {/* Company name */}
+                    {/* school name (i used my school name in this project) */}
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                         Siyane national school
                     </Typography>

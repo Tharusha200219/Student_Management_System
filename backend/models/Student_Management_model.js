@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+//model class for student managment project
 const StudentManagementSchema = mongoose.Schema(
     {
         Student_ID: {
